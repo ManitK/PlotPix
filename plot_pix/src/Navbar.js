@@ -9,18 +9,27 @@ const Navbar = () => {
 
     return ( 
         <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div className="container-fluid">
 
-            <div className="container-fluid d-flex justify-content-center align-items-center">
+            
+            <div className="d-flex w-100 justify-content-between align-items-center">
                 <Link to = "/" className="navbar-brand" style = {{textDecoration: "none"}}>
-                <h1 className="navbar-brand">PlotPix</h1>
+                    <h1 className="navbar-brand">PlotPix</h1>
                 </Link>
-                <h2 className="navbar-brand" style = {{textDecoration: "none"}} >Score: {userScore} </h2>
-                {!isLoggedIn ? 
-                // add link to login page
-                    (<button className="btn btn-light" onClick={login}>Login / Signup</button>) : 
-                    (<button className="btn btn-danger" onClick={logout}>Logout</button>)}
-                </div>
 
+                <h1 className="navbar-brand mx-auto" style={{textDecoration: "none"}}>Score: {userScore}</h1>
+
+                {!isLoggedIn ? 
+                        // Link to login page
+                        <Link to="/login" className="navbar-brand" style={{textDecoration: "none", color: "white", fontSize: "1.25rem"}}>
+                            Login
+                        </Link> : 
+                        // Logout button
+                        <button className="btn btn-danger" onClick={logout}>Logout</button>
+                    }
+                </div>
+            
+            </div>
         </nav>
     );
 }
