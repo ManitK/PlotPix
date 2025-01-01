@@ -1,0 +1,30 @@
+{
+    "Action": {
+        "Avatar": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+        "The Matrix": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+        "Mad Max": "In a self-destructing world, a vengeful Australian policeman sets out to stop a violent motorcycle gang.",
+        "The Dark Knight": "When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.",
+        "Rocky": "A small-time Philadelphia boxer gets a supremely rare chance to fight the world heavyweight champion in a bout in which he strives to go the distance for his self-respect."
+    },
+    "Comedy": {
+        "The Hangover": "Three buddies wake up from a bachelor party in Las Vegas with no memory of the previous night and the bachelor missing. They must make their way around the city in order to find their friend in time for his wedding.",
+        "Superbad": "Two co-dependent high school seniors are forced to deal with separation anxiety after their plan to stage a booze-soaked party goes awry.",
+        "Dumb and Dumber": "After a woman leaves a briefcase at the airport terminal, a dumb limo driver and his dumber friend set out on a hilarious cross-country road trip to Aspen to return it.",
+        "The Big Lebowski": "Jeff \"The Dude\" Lebowski, mistaken for a millionaire of the same name, seeks restitution for his ruined rug and enlists his bowling buddies to help get it.",
+        "Anchorman The Legend of Ron Burgundy": "In the 1970s, an anchorman's stint as San Diego's top-rated newsreader is challenged when an ambitious newswoman becomes his co-anchor."
+    },
+    "Drama": {
+        "The Shawshank Redemption": "A banker convicted of uxoricide forms a friendship over a quarter century with a hardened convict, while maintaining his innocence and trying to remain hopeful through simple compassion.",
+        "Forrest Gump": "The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.",
+        "The Godfather": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+        "Fight Club": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+        "The Green Mile": "Paul Edgecomb, the head guard of a prison, meets an inmate, John Coffey, a black man who is accused of murdering two girls. His life changes drastically when he discovers that John has a special gift."
+    },
+    "Romance": {
+        "Call Me By Your Name": "It's the summer of 1983, and 17-year-old Elio is spending the days with his family at their villa in Lombardy, Italy. He soon meets Oliver, who's working as an intern for Elio's father. They discover the heady beauty of awakening ...",
+        "The Notebook": "An elderly man reads to a woman with dementia the story of two young lovers whose romance is threatened by the difference in their respective social classes.",
+        "Pride and Prejudice": "While the arrival of wealthy gentlemen sends her marriage-minded mother into a frenzy, willful and opinionated Elizabeth Bennet matches wits with haughty Mr. Darcy.",
+        "La La Land": "When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.",
+        "Eternal Sunshine of the Spotless Mind": "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories forever."
+    }
+}

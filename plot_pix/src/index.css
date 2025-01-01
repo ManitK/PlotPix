@@ -1,0 +1,141 @@
+.play-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.logo {
+  width: 250px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+  
+}
+
+.btn {
+  margin-top: 20px;
+  height: 50px;
+  width: 100px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);          
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar-brand {
+  padding-left: 35px;
+}
+
+
+.select-genre {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 60vh;          
+  margin: 0;              
+  flex-direction: column;
+  gap: 20px;
+}
+
+.select-genre .select-heading {
+  padding-left :20px;
+  padding-top : 20px;
+}
+
+.select-genre .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 150px;
+  width: 200px;
+  text-decoration: none;
+  border-radius: 10px;
+  padding-top: 7px;
+}
+
+.select-genre .card:hover {
+  transform: scale(1.05);          
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.genre-page h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+.genre-page .card {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.genre-page .card-header {
+  /* color: white; */
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.genre-page .card-body {
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+
+.genre-page .card-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.genre-page img {
+  width: 100%; /* Ensure the image fits within the card */
+  height: auto;
+  display: block;
+}
+
+.genre-page .input-guess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.genre-page .input-guess input {
+  height: 50px;
+  width: 300px;
+  font-size: 1.2rem;
+  padding: 10px;
+  /* center align the input box */
+  text-align: center;
+}
+
+.genre-page .input-guess button {
+  text-align: center;
+}
+
+.genre-page .alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 300px;
+  margin: 20px auto;
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  /* text-align: center;  */
+  padding-right: 10px;
+}
+
