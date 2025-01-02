@@ -2,12 +2,15 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
+import { AuthContext } from "./AuthContext";
+import { useContext } from "react";
 
 const Login = () => {
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
+    const {login} = useContext(AuthContext);
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -15,19 +18,22 @@ const Login = () => {
             const response = await axios.post('http://localhost:5001/api/login', { username, password });
 
             if (response.status === 200) {
+                localStorage.setItem('username', username);
+                login({ username });
                 navigate('/');
             }
             else{
                 alert('Invalid credentials');
             }
         } catch (error){
+            console.error("Login error:", error);
             alert('An error occurred, please try again.');
         }
     };
 
     return (  
         <div className="login-page">
-            <form>
+            <form form onSubmit={handleLogin}>
             <div>
                 <img className = "logo" src="./game_logo.png" alt="game_logo"/>
                 
@@ -56,7 +62,7 @@ const Login = () => {
                     Create Account
                 </Link></p>
 
-                <button type="button" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
     );

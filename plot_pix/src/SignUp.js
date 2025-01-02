@@ -15,6 +15,7 @@ const SignUp = () => {
             const response = await axios.post('http://localhost:5001/api/signup', { email, username, password });
 
             if (response.data.success) {
+                alert('Successfully signed up!');
                 navigate('/');
             } else {
                 alert('Signup failed. Please try again.');
