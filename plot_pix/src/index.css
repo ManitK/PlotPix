@@ -3,25 +3,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  /* height: 100vh; */
+  margin-top: 10vh;
 }
 
-.logo {
+.play-page .logo {
   width: 250px;
   height: 200px;
   margin: 0 auto;
   display: block;
-  
 }
 
-.btn {
+.play-page .btn {
   margin-top: 20px;
   height: 50px;
-  width: 100px;
+  width: 200px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn:hover {
+.play-page .btn:hover {
   transform: scale(1.05);          
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
@@ -35,6 +35,60 @@
   margin-right: auto;
 }
 
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 60vh; */
+  margin-top: 10vh;
+}
+
+.login-page .logo {
+  width: 250px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.login-page .btn {
+  margin-top: 10px;
+  height: 50px;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+}
+
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;  */
+  margin-top: 10vh;
+}
+
+
+.signup-page .logo {
+  width: 250px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.signup-page .btn {
+  margin-top: 20px;
+  height: 50px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-page .btn:hover {
+  transform: scale(1.05);          
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
 
 
 .select-genre {

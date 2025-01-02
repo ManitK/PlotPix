@@ -20,8 +20,7 @@ const Navbar = () => {
                 <h1 className="navbar-brand mx-auto" style={{textDecoration: "none"}}>Score: {userScore}</h1>
 
                 {!isLoggedIn ? 
-                        // Link to login page
-                        <Link to="/login" className="navbar-brand" style={{textDecoration: "none", color: "white", fontSize: "1.25rem"}}>
+                        <Link to="/login" className="navbar-brand" style={{ color: "white", fontSize: "1.25rem"}}>
                             Login
                         </Link> : 
                         // Logout button
