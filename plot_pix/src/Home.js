@@ -1,9 +1,18 @@
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "./AuthContext";
+import { useContext } from "react";
 
 const Home = () => {
-
+    const { isLoggedIn } = useContext(AuthContext);
+    const navigateToLogin = useNavigate();
     const navigateToGenre = useNavigate();
+
     function handlePlayClick() {
+        if (!isLoggedIn) {
+            alert("You need to log in to play the game!");
+            navigateToLogin("/login");
+            return;
+        }
         navigateToGenre('/select');
     }
 

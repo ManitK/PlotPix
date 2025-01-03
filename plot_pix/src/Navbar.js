@@ -5,7 +5,7 @@ import { AuthContext } from "./AuthContext";
 
 const Navbar = () => {
     const { userScore } = useContext(ScoreContext);
-    const { isLoggedIn, username, login, logout } = useContext(AuthContext);
+    const { isLoggedIn, username } = useContext(AuthContext);
 
     return ( 
         <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">

@@ -5,6 +5,8 @@ const userSchema = new mongoose.Schema({
     username: { type: String, required: true, unique: true },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
+    progress: { type: Map, of: Number, default: () => new Map() },
+    score: { type: Int16Array, required: true }
 });
 
 userSchema.pre('save', async function (next) {

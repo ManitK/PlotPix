@@ -10,7 +10,7 @@ const Select = () => {
             <h4 className="card-title">Action</h4>
           </div>
         </Link>
-
+        
         <Link to="/genre/Comedy" className="card text-white bg-primary mb-3" style={{ maxWidth: "20rem" }}>
           <div className="card-body">
             <h4 className="card-title">Comedy</h4>
@@ -30,8 +30,6 @@ const Select = () => {
         </Link>
 
       </div>
-    );
-  };
+    )};
   
   export default Select;
-  

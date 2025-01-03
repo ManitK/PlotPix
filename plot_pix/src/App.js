@@ -33,3 +33,11 @@ function App() {
 }
 
 export default App;
+
+// 1. select page
+// implement progress bar for each genre 
+// so user starts each particular genre with their last saved state
+
+// 2. store scores and state of user for each genre
+
+// 3. implement leaderboard page 
