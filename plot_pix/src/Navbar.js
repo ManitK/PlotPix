@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { ScoreContext } from "./Scorecontext";
-import { useContext } from "react";
 import { AuthContext } from "./AuthContext";
+import { useContext } from "react";
+import { ScoreContext } from "./ScoreContext";
 
 const Navbar = () => {
     const { userScore } = useContext(ScoreContext);

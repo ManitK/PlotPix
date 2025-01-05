@@ -16,7 +16,8 @@ router.post('/signup', async (req, res) => {
         const emailExists = await User.findOne ({ email });
         if (emailExists) return res.status(400).json({ message: 'Email already exists' });
 
-        const newUser = new User({ username, email, password });
+        // const newUser = new User({ username, email, password });
+        const newUser = new User({username, email, password, progress: {}, score: 0});
         await newUser.save();
 
         res.status(201).json({ success: true, message: 'User registered successfully' });
@@ -47,14 +48,14 @@ router.post('/login', async (req, res) => {
 });
 
 // Update Progress Route
-router.post('/update-progress', async (req,res) => {
-    const { username,genre,level} = req.body;
+router.post('/update-progress/:username', async (req,res) => {
+    const {genre,level} = req.body;
 
     try{
-        const user = await User.findOne({username});
+        const user = await User.findOne({ username: req.params.username });
         if (!user) return res.status(400).json({ message: 'User not found' });
 
-        user.progress.set(genre,level);
+        user.progress[genre] = level;
         await user.save();
         res.status(200).json({ success: true, message: 'Progress updated successfully' });
     }
@@ -64,8 +65,8 @@ router.post('/update-progress', async (req,res) => {
 });
 
 // Get User Progress Route
-router.post('/get-progress', async (req,res) => {
-    const {username} = req.body;
+router.get('/get-progress/:username', async (req,res) => {
+    const {username} = req.params;
 
     try{
         const user = await User.findOne({username});
@@ -76,6 +77,39 @@ router.post('/get-progress', async (req,res) => {
     catch (error){
         res.status(500).json({ success: false, message: 'Server error' });
     }
+});
+
+// Update User Score Route
+router.post('/update-score/:username', async (req,res) => {
+    const {score} = req.body;
+
+    try{
+        const user = await User.findOne({username: req.params.username});
+        if (!user) return res.status(400).json({ message: 'User not found' });
+
+        user.score = score;
+        await user.save();
+
+        res.status(200).json({ success: true, message: 'Score updated successfully' });
+    }
+    catch (error){
+        res.status(500).json({ success: false, message: 'Server error' });
+    }
+});
+
+// Get User Score Route
+router.get('/get-score/:username', async (req,res) => {
+
+    try{
+        const user = await User.findOne({username: req.params.username});
+        if (!user) return res.status(400).json({ message: 'User not found' });
+
+        res.status(200).json({ success: true, score: user.score });
+    }
+    catch (error){
+        res.status(500).json({ success: false, message: 'Server error' });
+    }
+
 });
 
 module.exports = router;
