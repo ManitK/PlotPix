@@ -4,8 +4,9 @@ import { useContext } from "react";
 import { ScoreContext } from "./ScoreContext";
 
 const Navbar = () => {
-    const { userScore } = useContext(ScoreContext);
     const { isLoggedIn, username } = useContext(AuthContext);
+    console.log(isLoggedIn,username);
+    const { score } = useContext(ScoreContext);
 
     return ( 
         <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
@@ -16,7 +17,7 @@ const Navbar = () => {
                         <h1 className="navbar-brand title">PlotPix</h1>
                     </Link>
 
-                    <h1 className="navbar-brand score" style={{textDecoration: "none"}}>Score: {userScore}</h1>
+                    <h1 className="navbar-brand score" style={{textDecoration: "none"}}>Score: {score}</h1>
 
                     {!isLoggedIn ? 
                         (<Link to="/login" className="navbar-brand login" style={{ color: "white", fontSize: "1.25rem" }}> Login</Link>) : 

@@ -8,7 +8,7 @@ import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from "./AuthContext";
 import { ScoreProvider } from "./ScoreContext";
-
+import Leaderboard from './Leaderboard';
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
             <Route exact path = "/" element = {<Home/>} />
             <Route exact path = "/select" element = {<Select/>} />
             <Route exact path = "/genre/:name" element = {<Genre/>} />
+            <Route exact path = "/leaderboard" element = {<Leaderboard/>} />
           </Routes>
         </div>
         </Router>

@@ -12,5 +12,13 @@ app.use(express.json());
 
 app.use('/api', require('./routes/authRoutes'));
 
+// Allow CORS from your frontend
+app.use(cors({
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type'],
+    credentials: true,
+  }));
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

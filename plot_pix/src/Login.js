@@ -33,7 +33,7 @@ const Login = () => {
 
     return (  
         <div className="login-page">
-            <form form onSubmit={handleLogin}>
+            <form form="true" onSubmit={handleLogin}>
             <div>
                 <img className = "logo" src="./game_logo.png" alt="game_logo"/>
                 
@@ -53,7 +53,7 @@ const Login = () => {
                     className="form-control" 
                     id="exampleInputPassword1" 
                     placeholder="Password" 
-                    autocomplete="off" 
+                    autoComplete="off" 
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}/>
             </div>

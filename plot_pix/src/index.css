@@ -14,8 +14,16 @@
   display: block;
 }
 
+.play-page .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 23px;
+}
+
 .play-page .btn {
-  margin-top: 20px;
   height: 50px;
   width: 200px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -39,11 +47,12 @@
 
 .navbar-brand h1 {
   margin: 0;
-  padding-top: 4px;
+  padding-bottom: 7px;
 }
 
 .navbar-brand.score{
   padding-right: 12px;
+  padding-top: 12px;
 }
 
 .navbar-brand.login{
@@ -222,3 +231,31 @@
   padding-right: 10px;
 }
 
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.leaderboard h1{
+  padding-left: 25px;
+  font-size: 2rem;
+}
+
+.leaderboard .table{
+  width: 75%;
+  margin-top: 20px;
+  border-style: solid;
+  border-collapse: collapse;
+  /* text-align: center; */
+}
+
+.leaderboard .table th, .table td {
+  font-size: 1rem;
+}
+
+.leaderboard .table thead th {
+  font-size: 1.1rem;
+}
