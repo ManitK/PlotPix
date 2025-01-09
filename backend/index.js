@@ -11,6 +11,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+const mongoURI = process.env.NODE_ENV === 'production' 
+    ? process.env.MONGO_URI
+    : 'mongodb://localhost:27017/mern-auth';
+
 // db conn
 mongoose.connect('mongodb://localhost:27017/mern-auth')
     .then(() => console.log('MongoDB connected'))
