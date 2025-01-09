@@ -1,12 +1,12 @@
 import {Link} from "react-router-dom";
 import React, { useContext, useEffect, useState } from "react";
-import { ScoreContext } from "./ScoreContext";
+import { Scorecontext } from "./Scorecontext";
 import { AuthContext } from "./AuthContext";
 import gameData from "./movie_images.json";
 
 const Select = () => {
 
-    const {score} = useContext(ScoreContext);
+    const {score} = useContext(Scorecontext);
     const {username} = useContext(AuthContext);
     const [progressDict,setProgress] = useState({});
 

@@ -7,7 +7,7 @@ import SignUp from './SignUp';
 import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from "./AuthContext";
-import { ScoreProvider } from "./ScoreContext";
+import { ScoreProvider } from "./Scorecontext";
 import ProtectedRoute from "./ProtectedRoute";
 import Leaderboard from './Leaderboard';
 import NotFound from './NotFound';

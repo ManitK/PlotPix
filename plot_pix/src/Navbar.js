@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { AuthContext } from "./AuthContext";
 import { useContext } from "react";
-import { ScoreContext } from "./ScoreContext";
+import { Scorecontext } from "./Scorecontext";
 
 const Navbar = () => {
     const { isLoggedIn, username } = useContext(AuthContext);
-    const { score } = useContext(ScoreContext);
+    const { score } = useContext(Scorecontext);
 
     return ( 
         <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">

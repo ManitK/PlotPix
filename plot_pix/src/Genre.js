@@ -2,7 +2,7 @@ import {useParams, useNavigate} from "react-router-dom";
 import React,{useState, useContext, useEffect} from "react";
 import gameData from "./movie_images.json";
 import { AuthContext } from "./AuthContext";
-import { ScoreContext } from "./ScoreContext";
+import { Scorecontext } from "./Scorecontext";
 
 const Genre = () => {
     const {name} = useParams();
@@ -10,7 +10,7 @@ const Genre = () => {
 
     const {username} = useContext(AuthContext);
 
-    const {score, setUserScore} = useContext(ScoreContext);
+    const {score, setUserScore} = useContext(Scorecontext);
 
     const [currentLevel, setCurrentLevel] = useState(null);
 

@@ -1,7 +1,7 @@
 import React, { createContext, useState, useContext, useEffect } from "react";
 import { AuthContext } from "./AuthContext";
 
-export const ScoreContext = createContext();
+export const Scorecontext = createContext();
 
 export const ScoreProvider = ({ children }) => {
 
@@ -35,8 +35,8 @@ export const ScoreProvider = ({ children }) => {
     };
 
     return (
-        <ScoreContext.Provider value={{ score, setUserScore }}>
+        <Scorecontext.Provider value={{ score, setUserScore }}>
             {children}
-        </ScoreContext.Provider>
+        </Scorecontext.Provider>
     );
 };
