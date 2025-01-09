@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use('/api', require('./routes/authRoutes'));
 
-// Allow CORS from your frontend
+// cors from the frontend
 app.use(cors({
     origin: 'http://localhost:3000',
     methods: ['GET', 'POST'],

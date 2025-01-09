@@ -18,11 +18,11 @@ export const ScoreProvider = ({ children }) => {
                     return response.json();
                 })
                 .then((data) => {
-                    console.log('Fetched Score Data: ', data);
+                    // console.log('Fetched Score Data: ', data);
                     setScore(data.score);
                 })
                 .catch((error) => {
-                    console.error('Error fetching initial score:', error);
+                    // console.error('Error fetching initial score:', error);
                     setScore(0);
                 });
         } else {

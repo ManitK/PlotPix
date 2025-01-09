@@ -5,7 +5,6 @@ import { ScoreContext } from "./ScoreContext";
 
 const Navbar = () => {
     const { isLoggedIn, username } = useContext(AuthContext);
-    console.log(isLoggedIn,username);
     const { score } = useContext(ScoreContext);
 
     return ( 

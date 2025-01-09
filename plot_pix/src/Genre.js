@@ -25,14 +25,14 @@ const Genre = () => {
                 })
                 .then((data) => {
                     if (data?.progress && data.progress[name] !== undefined) {
-                        console.log('Fetched Progress Data: ', data);
+                        // console.log('Fetched Progress Data: ', data);
                         setCurrentLevel(data.progress[name]);
                     } else {
                         setCurrentLevel(0);
                     }
                 })
                 .catch((error) => {
-                    console.error('Error fetching progress:', error);
+                    // console.error('Error fetching progress:', error);
                     setCurrentLevel(0);
                 });
         } else {
@@ -55,7 +55,7 @@ const Genre = () => {
 
     const updateProgress = async (updatedLevel) => {
         try {
-            console.log("Request Body To Send:", { genre: name, level: updatedLevel });
+            // console.log("Request Body To Send:", { genre: name, level: updatedLevel });
 
             const response = await fetch(`http://localhost:5001/api/update-progress/${username}`, {
                 method : "POST",

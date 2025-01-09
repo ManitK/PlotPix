@@ -1,12 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
-import { AuthContext } from "./AuthContext";
-import { ScoreContext } from "./ScoreContext"; 
+import React, { useEffect, useState } from "react";
 
 const Leaderboard = () => {
-    const { username } = useContext(AuthContext);
-    const { score } = useContext(ScoreContext);
-    console.log(username, score);
-
     const [leaderboardDict, setLeaderboardDict] = useState(null);
 
     useEffect(() => {
@@ -19,10 +13,10 @@ const Leaderboard = () => {
                     })
                     .then((data) => {
                         setLeaderboardDict(data.dict);
-                        console.log("Fetched Data:", data.dict);
+                        // console.log("Fetched Data:", data.dict);
                     })
                     .catch((error) => {
-                        console.error('Error fetching initial score:', error);
+                        console.error('Error fetching data:', error);
                     });
         },[]);
     
