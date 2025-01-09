@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // db conn
-mongoose.connect('mongodb://localhost:27017/mern-auth', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/mern-auth')
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
 
@@ -20,6 +20,7 @@ mongoose.connect('mongodb://localhost:27017/mern-auth', { useNewUrlParser: true,
 app.use('/api/auth', authRoutes); 
 
 // starting server
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
