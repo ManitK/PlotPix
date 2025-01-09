@@ -43,7 +43,7 @@ data = {
         'La La Land': '', 
         'Eternal Sunshine of the Spotless Mind': ''
     },
-    'Sci-Fi': {
+    'SciFi': {
         'Avatar': '',
         'Inception': '',
         '2001 A Space Odyssey': '',

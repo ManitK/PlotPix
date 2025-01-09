@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
     password: { type: String, required: true },
     progress: { 
         type: Object, 
-        default: { "Action": 0,"Adventure": 0, "Romance": 0, "Comedy": 0, "Drama": 0, "Thriller": 0, "Sci-Fi": 0, "Horror": 0 } 
+        default: { Action: 0, Adventure: 0, Romance: 0, Comedy: 0, Drama: 0, Thriller: 0, SciFi: 0, Horror: 0 } 
     },
     score: { type: Number, required: true }
 });

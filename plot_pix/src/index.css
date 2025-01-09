@@ -193,6 +193,7 @@
   flex-grow: 1;
   text-align: center;
   padding-left: 55px;
+  padding-right: 20px;
 }
 
 .genre-page .header button {

@@ -126,14 +126,14 @@ const Select = () => {
           </div>
 
           <div className="sci-fi-section">
-            <Link to="/genre/Sci-Fi" className="card text-white bg-primary mb-3" style={{ maxWidth: "20rem" }}>
+            <Link to="/genre/SciFi" className="card text-white bg-primary mb-3" style={{ maxWidth: "20rem" }}>
               <div className="card-body">
                 <h4 className="card-title">Sci-Fi</h4>
               </div>
             </Link>
 
             <div className="progress">
-                <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Sci-Fi'][0] / toPrintData['Sci-Fi'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['SciFi'][0] / toPrintData['SciFi'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 

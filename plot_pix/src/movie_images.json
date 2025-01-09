@@ -145,7 +145,7 @@
             "dalle_3_img": "/data/Eternal_Sunshine_of_the_Spotless_Mind.png"
         }
     ],
-    "Sci-Fi": [
+    "SciFi": [
         {   "title": "Avatar",
             "plot": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
             "dalle_3_img": "/data/Avatar.png"
