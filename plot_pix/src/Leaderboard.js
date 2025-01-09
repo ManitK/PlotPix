@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 
 const Leaderboard = () => {
     const [leaderboardDict, setLeaderboardDict] = useState(null);
-
     useEffect(() => {
-                fetch(`http://localhost:5001/api/get-leaderboard/`)
+                fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/api/get-leaderboard/`)
                     .then((response) => {
                         if (response.status !== 200) {
                             throw new Error('Failed to fetch leaderboard dictionary');

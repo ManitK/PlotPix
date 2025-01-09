@@ -12,7 +12,7 @@ const SignUp = () => {
         e.preventDefault();
         
         try {
-            const response = await axios.post('http://localhost:5001/api/signup', { email, username, password });
+            const response = await axios.post(`${process.env.REACT_APP_BACKEND_BASE_URL}/api/signup`, { email, username, password });
 
             if (response.data.success) {
                 alert('Successfully signed up!');

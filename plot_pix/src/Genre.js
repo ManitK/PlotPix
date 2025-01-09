@@ -16,7 +16,7 @@ const Genre = () => {
 
     useEffect(() => {
         if (username && name) {
-            fetch(`http://localhost:5001/api/get-progress/${username}`)
+            fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/api/get-progress/${username}`)
                 .then((response) => {
                     if (response.status !== 200) {
                         throw new Error('Failed to fetch progress');
@@ -57,7 +57,7 @@ const Genre = () => {
         try {
             // console.log("Request Body To Send:", { genre: name, level: updatedLevel });
 
-            const response = await fetch(`http://localhost:5001/api/update-progress/${username}`, {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/api/update-progress/${username}`, {
                 method : "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -80,7 +80,7 @@ const Genre = () => {
 
     const updateScore = async (updatedScore) => {
         try{
-            const response = await fetch(`http://localhost:5001/api/update-score/${username}`, {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/api/update-score/${username}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

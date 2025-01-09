@@ -10,7 +10,7 @@ export const ScoreProvider = ({ children }) => {
 
     useEffect(() => {
         if (username) {
-            fetch(`http://localhost:5001/api/get-score/${username}`)
+            fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/api/get-score/${username}`)
                 .then((response) => {
                     if (response.status !== 200) {
                         throw new Error('Failed to fetch initial score');

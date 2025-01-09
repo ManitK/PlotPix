@@ -20,7 +20,6 @@ mongoose.connect('mongodb://localhost:27017/mern-auth', { useNewUrlParser: true,
 app.use('/api/auth', authRoutes); 
 
 // starting server
-const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });

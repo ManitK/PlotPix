@@ -22,7 +22,7 @@ const Select = () => {
 
     useEffect(() => {
           if (username && score) {
-              fetch(`http://localhost:5001/api/get-progress/${username}`)
+              fetch(`${process.env.REACT_APP_BACKEND_BASE_URL}/api/get-progress/${username}`)
                   .then((response) => {
                       if (response.status !== 200) {
                           throw new Error('Failed to fetch initial score');
@@ -59,7 +59,7 @@ const Select = () => {
               </div>
             </Link>
 
-            <div class="progress">
+            <div className="progress">
                 <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Action'][0] / toPrintData['Action'][1]) * 100}%` }}  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Select = () => {
               </div>
             </Link>
 
-            <div class="progress">
+            <div className="progress">
                 <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Adventure'][0] / toPrintData['Adventure'][1]) * 100}%` }}  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
@@ -84,7 +84,7 @@ const Select = () => {
               </div>
             </Link>
 
-            <div class="progress">
+            <div className="progress">
                 <div className="progress-bar" role="progressbar" style={{ width:`${(toPrintData['Comedy'][0] / toPrintData['Comedy'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
@@ -96,7 +96,7 @@ const Select = () => {
               </div>
             </Link>
 
-            <div class="progress">
+            <div className="progress">
                 <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Drama'][0] / toPrintData['Drama'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
@@ -108,7 +108,7 @@ const Select = () => {
               </div>
             </Link>
 
-            <div class="progress">
+            <div className="progress">
                 <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Thriller'][0] / toPrintData['Thriller'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
@@ -120,7 +120,7 @@ const Select = () => {
               </div>
             </Link>
 
-            <div class="progress">
+            <div className="progress">
                 <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Romance'][0] / toPrintData['Romance'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
@@ -132,7 +132,7 @@ const Select = () => {
               </div>
             </Link>
 
-            <div class="progress">
+            <div className="progress">
                 <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Sci-Fi'][0] / toPrintData['Sci-Fi'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
@@ -144,7 +144,7 @@ const Select = () => {
               </div>
             </Link>
 
-            <div class="progress">
+            <div className="progress">
                 <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Horror'][0] / toPrintData['Horror'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>

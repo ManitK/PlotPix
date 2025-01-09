@@ -15,7 +15,7 @@ const Login = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try{
-            const response = await axios.post('http://localhost:5001/api/login', { username, password });
+            const response = await axios.post(`${process.env.REACT_APP_BACKEND_BASE_URL}/api/login`, { username, password });
 
             if (response.status === 200) {
                 localStorage.setItem('username', username);
