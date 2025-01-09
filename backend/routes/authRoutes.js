@@ -129,7 +129,7 @@ router.get('/get-leaderboard', async (req,res) => {
             users.map(user => [user.username, user.score])
         );
 
-        res.status(200).json({ success: true, scores: leaderboardDict });
+        res.status(200).json({ success: true, dict: leaderboardDict });
     }
     catch (error){
         res.status(500).json({ success: false, message: 'Server error' });

@@ -1,6 +1,15 @@
 import json
 import requests
 
+# action
+# adventure
+# Comedy
+# Drama
+# Thriller
+# Horror
+# Sci-Fi
+# Fantasy
+
 data = {
     'Action': {
         'Avatar': '', 

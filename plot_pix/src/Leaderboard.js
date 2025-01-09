@@ -18,7 +18,8 @@ const Leaderboard = () => {
                         return response.json();
                     })
                     .then((data) => {
-                        setLeaderboardDict(data);
+                        setLeaderboardDict(data.dict);
+                        console.log("Fetched Data:", data.dict);
                     })
                     .catch((error) => {
                         console.error('Error fetching initial score:', error);
@@ -29,21 +30,22 @@ const Leaderboard = () => {
         <div className="leaderboard">
             <h1>Leaderboard</h1>
             <table className = "table table-hover">
-                <thead className="thead-dark">
-                    <tr>
+                <thead>
+                    <tr className="table-dark">
                         <th scope="col">No.</th>
                         <th scope="col">Username</th>
                         <th scope="col">Score</th>
                     </tr>
                 </thead>
                 <tbody>
-                {leaderboardDict ? Object.entries(leaderboardDict).map(([username, score], index) => (
-                              <tr key={index}>
-                                  <th scope="row">{index + 1}</th>
-                                  <td>{username}</td>
-                                  <td>{score}</td>
-                              </tr>
-                          ))
+                {leaderboardDict ? 
+                    Object.keys(leaderboardDict).map((key, index) => (
+                        <tr key={key}>
+                            <th scope="row">{index + 1}</th>
+                            <td>{key}</td>
+                            <td>{leaderboardDict[key]}</td>
+                        </tr>
+                    ))
                         : (
                             <tr>
                                 <td colSpan="3" style={{ textAlign: "center" }}>

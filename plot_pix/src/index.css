@@ -115,19 +115,33 @@
 }
 
 
-.select-genre {
+/* .select-genre {
   display: flex;
   justify-content: center; 
   align-items: center;    
-  height: 60vh;          
+  height: 70vh;          
   margin: 0;              
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+} */
+
+.select-genre {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+  gap: 30px; /* Space between items */
+  justify-items: center; /* Centers items horizontally */
+  align-items: start; /* Aligns items vertically to the top */
+  margin: 0 auto; /* Centers the whole grid container */
+  width: 90%; /* Adjust width if necessary */
 }
 
-.select-genre .select-heading {
+.select-page .select-heading {
   padding-left :20px;
   padding-top : 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .select-genre .card {
@@ -136,11 +150,15 @@
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 150px;
+  height: 70px;
   width: 200px;
   text-decoration: none;
   border-radius: 10px;
   padding-top: 7px;
+}
+
+.select-genre .progress{
+  border-style: solid;
 }
 
 .select-genre .card:hover {
@@ -245,7 +263,7 @@
 }
 
 .leaderboard .table{
-  width: 75%;
+  width: 70%;
   margin-top: 20px;
   border-style: solid;
   border-collapse: collapse;
