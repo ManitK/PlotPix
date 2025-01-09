@@ -104,7 +104,7 @@ const Genre = () => {
     const checkAnswer = async () => {
         if (userInput.toLowerCase().trim() === currentMovie.title.toLowerCase()) {
 
-            if (currentLevel + 1 < genreData.length) {
+            if (currentLevel + 1 <= genreData.length) {
 
                 let updatedScore = score + 100;
                 setUserScore(updatedScore);
@@ -113,11 +113,9 @@ const Genre = () => {
                 setUserInput("");
                 showAlert("success", "Correct Answer");
 
-                // console.log("Current Level:", currentLevel);
                 let updatedLevel = currentLevel + 1;
                 setCurrentLevel(updatedLevel);
                 updateProgress(updatedLevel);
-                // console.log("Updated Level:", updatedLevel);
 
             } 
             else {
@@ -137,30 +135,30 @@ const Genre = () => {
     
     return (
         <div className="genre-page">
-            <h1>{name}</h1>
 
-            {currentMovie ? (
-                <div className="card mb-3">
-                    <h3 className="card-header">Level {currentLevel + 1}</h3>
-                    <img className="d-block user-select-none" src={currentMovie.dalle_3_img} alt="Plot" />
-                    <div className="card-body">
-                        <p className="card-text">Guess The Movie</p>
-                    </div>
-                </div>
-            ) : ( <p>Loading current movie data...</p> )}
-
-            <div className="input-guess">
-                <input 
-                className="form-control form-control-lg" 
-                type="text" 
-                placeholder="Enter" 
-                id="inputLarge" 
-                value = {userInput}
-                onChange={(e) => setUserInput(e.target.value)}
-                onKeyDown={handleSubmission}/>
-
-                <button type="button" className="btn btn-primary" onClick={checkAnswer}>Submit</button>
+            <div className="header">
+                <button type="button" className="btn btn-primary" onClick={() => navigate("/select")}>Back</button>
+                <h1>{name}</h1>
             </div>
+
+            {currentLevel + 1 <= genreData.length ? (
+                currentMovie ? (
+                    <>
+                        <div className="card mb-3">
+                            <h3 className="card-header">Level {currentLevel + 1}</h3>
+                            <img className="d-block user-select-none" src={currentMovie.dalle_3_img} alt="Plot"/>
+                            <div className="card-body">
+                                <p className="card-text">Guess The Movie</p>
+                            </div>
+                        </div>
+                        
+                        <div className="input-guess">
+                            <input className="form-control form-control-lg" type="text" placeholder="Enter" id="inputLarge" value={userInput} onChange={(e) => setUserInput(e.target.value)} onKeyDown={handleSubmission}/>
+                            <button type="button" className="btn btn-primary" onClick={checkAnswer}> Submit </button>
+                        </div>
+                    </>
+                ) : ( <center><h4>Loading ...</h4></center> )
+            ) : ( <center><h3>All Levels Completed</h3></center> )}
 
             {alertMessage && 
                 (<div className={`alert alert-dismissible alert-${alertMessage.type}`}>

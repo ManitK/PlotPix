@@ -8,7 +8,9 @@ import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from "./AuthContext";
 import { ScoreProvider } from "./ScoreContext";
+import ProtectedRoute from "./ProtectedRoute";
 import Leaderboard from './Leaderboard';
+import NotFound from './NotFound';
 
 function App() {
   return (
@@ -21,9 +23,10 @@ function App() {
             <Route exact path = "/login" element = {<Login/>} />
             <Route exact path = "/signup" element = {<SignUp/>} />
             <Route exact path = "/" element = {<Home/>} />
-            <Route exact path = "/select" element = {<Select/>} />
-            <Route exact path = "/genre/:name" element = {<Genre/>} />
+            <Route path="/select" element={ <ProtectedRoute> <Select/> </ProtectedRoute> }/>
+            <Route path="/genre/:name" element={ <ProtectedRoute> <Genre/> </ProtectedRoute> }/>
             <Route exact path = "/leaderboard" element = {<Leaderboard/>} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         </Router>
@@ -33,5 +36,3 @@ function App() {
 }
 
 export default App;
-
-// implement leaderboard page 

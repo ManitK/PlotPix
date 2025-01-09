@@ -22,6 +22,8 @@ const Home = () => {
     return ( 
         <div className = "play-page">
             <img className = "logo" src="./game_logo.png" alt="game_logo"/>
+            <h1>PlotPix</h1>
+            <p>Guess the movie from an AI-generated image of its plot</p>
                 <div className="btn-container">
                     <button type="button" className="btn btn-primary" onClick = {handlePlayClick}>Play</button>
                     <button type="button" className="btn btn-primary" onClick = {handleLeaderboardClick}>Leaderboard</button>

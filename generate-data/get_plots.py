@@ -1,36 +1,40 @@
 import json
 import requests
 
-# action
-# adventure
-# Comedy
-# Drama
-# Thriller
-# Horror
-# Sci-Fi
-# Fantasy
-
 data = {
     'Action': {
-        'Avatar': '', 
-        'The Matrix': '', 
-        'Mad Max': '', 
-        'The Dark Knight': '', 
-        'Rocky': ''
+        'The Dark Knight': '',
+        'Gladiator': '', 
+        'John Wick': '',
+        'Kill Bill': '', 
+        'Dunkirk': ''
+    },
+    'Adventure': {
+        'Casino Royale': '',
+        'Jaws': '',
+        'Inside Out': '',
+        'Up' : '',
+        'Back to the Future': '',
     },
     'Comedy': {
         'The Hangover': '', 
-        'Superbad': '', 
-        'Dumb and Dumber': '', 
-        'The Big Lebowski': '', 
-        'Anchorman The Legend of Ron Burgundy': ''
+        'The Wolf of Wall Street': '',
+        'Home Alone': '',
+        'The Truman Show': '',
+        'Knives Out': ''
     },
     'Drama': {
-        'The Shawshank Redemption': '', 
-        'Forrest Gump': '', 
         'The Godfather': '', 
         'Fight Club': '', 
-        'The Green Mile': ''
+        'Oppenheimer': '',
+        'The Social Network': '',
+        'Good Will Hunting': ''
+    },
+    'Thriller': {
+        'Parasite': '',
+        'Pulp Fiction': '',
+        'Get Out': '',
+        'Shutter Island': ''
     },
     'Romance': {
         'Call Me By Your Name': '', 
@@ -38,7 +42,19 @@ data = {
         'Pride and Prejudice': '', 
         'La La Land': '', 
         'Eternal Sunshine of the Spotless Mind': ''
-    }
+    },
+    'Sci-Fi': {
+        'Avatar': '',
+        'Inception': '',
+        '2001 A Space Odyssey': '',
+        'The Matrix': ''
+    },
+    'Horror': {
+        'It': '',
+        'The Conjuring': '',
+        'The Shining': '',
+        'Scream': '',
+    },
 }
 
 api_key = '86b205c7'
@@ -60,6 +76,6 @@ for genre in data:
         plot = get_movie_plot(movie)
         data[genre][movie] = plot
 
-output_file = '/Users/manitk/Desktop/Project/generate-data/movie_plots.json'
+output_file = '/Users/manitk/Documents/GitHub/PlotPix/generate-data/movie_plots.json'
 with open(output_file, 'w') as f:
     json.dump(data, f, indent=4)

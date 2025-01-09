@@ -64,6 +64,18 @@ const Select = () => {
             </div>
           </div>
 
+          <div className="adventure-section">
+            <Link to="/genre/Adventure" className="card text-white bg-primary mb-3" style={{ maxWidth: "20rem" }}>
+              <div className="card-body">
+                <h4 className="card-title">Adventure</h4>
+              </div>
+            </Link>
+
+            <div class="progress">
+                <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Adventure'][0] / toPrintData['Adventure'][1]) * 100}%` }}  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
 
           <div className="comedy-section">
             <Link to="/genre/Comedy" className="card text-white bg-primary mb-3" style={{ maxWidth: "20rem" }}>
@@ -89,6 +101,18 @@ const Select = () => {
             </div>
           </div>
 
+          <div className="thriller-section">
+            <Link to="/genre/Thriller" className="card text-white bg-primary mb-3" style={{ maxWidth: "20rem" }}>
+              <div className="card-body">
+                <h4 className="card-title">Thriller</h4>
+              </div>
+            </Link>
+
+            <div class="progress">
+                <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Thriller'][0] / toPrintData['Thriller'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
           <div className="romance-section">
             <Link to="/genre/Romance" className="card text-white bg-primary mb-3" style={{ maxWidth: "20rem" }}>
               <div className="card-body">
@@ -98,6 +122,30 @@ const Select = () => {
 
             <div class="progress">
                 <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Romance'][0] / toPrintData['Romance'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div className="sci-fi-section">
+            <Link to="/genre/Sci-Fi" className="card text-white bg-primary mb-3" style={{ maxWidth: "20rem" }}>
+              <div className="card-body">
+                <h4 className="card-title">Sci-Fi</h4>
+              </div>
+            </Link>
+
+            <div class="progress">
+                <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Sci-Fi'][0] / toPrintData['Sci-Fi'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div className="horror-section">
+            <Link to="/genre/Horror" className="card text-white bg-primary mb-3" style={{ maxWidth: "20rem" }}>
+              <div className="card-body">
+                <h4 className="card-title">Horror</h4>
+              </div>
+            </Link>
+
+            <div class="progress">
+                <div className="progress-bar" role="progressbar" style={{ width: `${(toPrintData['Horror'][0] / toPrintData['Horror'][1]) * 100}%` }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
 
