@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React, { useContext, useEffect, useState } from "react";
-import {ScoreContext} from "./ScoreContext";
-import {AuthContext} from "./AuthContext";
+import { ScoreContext } from "./ScoreContext";
+import { AuthContext } from "./AuthContext";
 import gameData from "./movie_images.json";
 
 const Select = () => {
