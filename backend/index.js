@@ -15,8 +15,10 @@ const mongoURI = process.env.NODE_ENV === 'production'
     ? process.env.MONGO_URI
     : 'mongodb://localhost:27017/mern-auth';
 
+console.log("Using Mongo URI:", mongoURI);
+
 // db conn
-mongoose.connect('mongodb://localhost:27017/mern-auth')
+mongoose.connect(mongoURI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
 
