@@ -7,7 +7,7 @@ from io import BytesIO
 existing = ["Avatar","The Matrix","The Dark Knight","The Hangover","The Godfather","Fight Club","Call Me By Your Name","The Notebook","Pride and Prejudice","La La Land","Eternal Sunshine of the Spotless Mind",]
 
 def get_image(model,movie,plot):
-    client = OpenAI(api_key='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')
+    client = OpenAI(api_key=API_KEY)
     instruction = "Do not add any text or words in the image generated. The image should be a depiction of the following: "
     response = client.images.generate(
         model="dall-e-" + str(model),
