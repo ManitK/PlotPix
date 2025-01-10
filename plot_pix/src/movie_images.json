@@ -2,190 +2,190 @@
     "Action": [
         {   "title": "The Dark Knight",
             "plot": "When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness.",
-            "dalle_3_img": "/data/The_Dark_Knight.png"
+            "dalle_3_img": "/data/Action_1.png"
         },
         {
             "title": "Gladiator",
             "plot": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
-            "dalle_3_img": "/data/Gladiator.png"
+            "dalle_3_img": "/data/Action_2.png"
         },
         {
             "title": "John Wick",
             "plot": "John Wick is a former hitman grieving the loss of his true love. When his home is broken into, robbed, and his dog killed, he is forced to return to action to exact revenge.",
-            "dalle_3_img": "/data/John_Wick.png"
+            "dalle_3_img": "/data/Action_3.png"
         },
         {
             "title": "Dunkirk",
             "plot": "Allied soldiers from Belgium, the British Commonwealth and Empire, and France are surrounded by the German Army and evacuated during a fierce battle in World War II.",
-            "dalle_3_img": "/data/Dunkirk.png"
+            "dalle_3_img": "/data/Action_4.png"
         },
         {
             "title": "Mad Max",
             "plot": "In a self-destructing world, a vengeful Australian policeman sets out to stop a violent motorcycle gang.",
-            "dalle_3_img": "/data/Mad_Max.png"
+            "dalle_3_img": "/data/Action_5.png"
         }
     ],
     "Adventure": [
         {
             "title": "Casino Royale",
             "plot": "After earning a licence to kill, secret agent James Bond sets out on his first mission as 007. Bond must defeat a private banker funding terrorists in a high-stakes game of poker at Casino Royale, in Montenegro.",
-            "dalle_3_img": "/data/Casino_Royale.png"
+            "dalle_3_img": "/data/Adventure_1.png"
         },
         {
             "title": "Jaws",
             "plot": "When a massive killer shark unleashes chaos on a beach community off Long Island, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down.",
-            "dalle_3_img": "/data/Jaws.png"
+            "dalle_3_img": "/data/Adventure_2.png"
         },
         {
             "title": "Up",
             "plot": "78-year-old Carl Fredricksen travels to South America in his house equipped with balloons, inadvertently taking a young stowaway.",
-            "dalle_3_img": "/data/Up.png"
+            "dalle_3_img": "/data/Adventure_3.png"
         },
         {
             "title": "Inside Out",
             "plot": "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school.",
-            "dalle_3_img": "/data/Inside_Out.png"
+            "dalle_3_img": "/data/Adventure_4.png"
         }
     ],
     "Comedy": [
         {
             "title": "The Hangover",
             "plot": "Three buddies wake up from a bachelor party in Las Vegas with no memory of the previous night and the bachelor missing. They must make their way around the city in order to find their friend in time for his wedding.",
-            "dalle_3_img": "/data/The_Hangover.png"
+            "dalle_3_img": "/data/Comedy_1.png"
         },
         {
             "title": "The Wolf of Wall Street",
             "plot": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
-            "dalle_3_img": "/data/The_Wolf_of_Wall_Street.png"
+            "dalle_3_img": "/data/Comedy_2.png"
         },
         {
             "title": "Home Alone",
             "plot": "An eight-year-old troublemaker, mistakenly left home alone, must defend his home against a pair of burglars on Christmas Eve.",
-            "dalle_3_img": "/data/Home_Alone.png"
+            "dalle_3_img": "/data/Comedy_3.png"
         },
         {
             "title": "The Truman Show",
             "plot": "An insurance salesman begins to suspect that his whole life is actually some sort of reality TV show.",
-            "dalle_3_img": "/data/The_Truman_Show.png"
+            "dalle_3_img": "/data/Comedy_4.png"
         },
         {
             "title": "Knives Out",
             "plot": "When renowned crime novelist Harlan Thrombey is found dead at his estate just after his 85th birthday, the inquisitive and debonair Detective Benoit Blanc is mysteriously enlisted to investigate.",
-            "dalle_3_img": "/data/Knives_Out.png"
+            "dalle_3_img": "/data/Comedy_5.png"
         }
     ],
     "Drama": [
         {
             "title": "The Godfather",
             "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-            "dalle_3_img": "/data/The_Godfather.png"
+            "dalle_3_img": "/data/Drama_1.png"
         },
         {
             "title": "Fight Club",
             "plot": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
-            "dalle_3_img": "/data/Fight_Club.png"
+            "dalle_3_img": "/data/Drama_2.png"
         },
         {
             "title": "The Social Network",
             "plot": "As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, he is sued by the twins who claimed he stole their idea and by the co-founder who was later squeezed out of the business.",
-            "dalle_3_img": "/data/The_Social_Network.png"
+            "dalle_3_img": "/data/Drama_3.png"
         },
         {
             "title": "Good Will Hunting",
             "plot": "Will Hunting, a janitor at MIT, has a gift for mathematics, but needs help from a psychologist to find direction in his life.",
-            "dalle_3_img": "/data/Good_Will_Hunting.png"
+            "dalle_3_img": "/data/Drama_4.png"
         }
     ],
     "Thriller": [
         {
             "title": "Parasite",
             "plot": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
-            "dalle_3_img": "/data/Parasite.png"
+            "dalle_3_img": "/data/Thriller_1.png"
         },
         {
             "title": "Pulp Fiction",
             "plot": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-            "dalle_3_img": "/data/Pulp_Fiction.png"
+            "dalle_3_img": "/data/Thriller_2.png"
         },
         {
             "title": "Get Out",
             "plot": "A young African-American visits his white girlfriend's parents for the weekend, where his simmering uneasiness about their reception of him eventually reaches a boiling point.",
-            "dalle_3_img": "/data/Get_Out.png"
+            "dalle_3_img": "/data/Thriller_3.png"
         },
         {
             "title": "Shutter Island",
             "plot": "Two US marshals are sent to a mental institution on an inhospitable island in order to investigate the disappearance of a patient.",
-            "dalle_3_img": "/data/Shutter_Island.png"
+            "dalle_3_img": "/data/Thriller_4.png"
         }
     ],
     "Romance": [
         {
             "title": "Call Me By Your Name",
             "plot": "It's the summer of 1983, and 17-year-old Elio is spending the days with his family at their villa in Lombardy, Italy. He soon meets Oliver, who's working as an intern for Elio's father. They discover the heady beauty of awakening ...",
-            "dalle_3_img": "/data/Call_Me_By_Your_Name.png"
+            "dalle_3_img": "/data/Romance_1.png"
         },
         {
             "title": "The Notebook",
             "plot": "An elderly man reads to a woman with dementia the story of two young lovers whose romance is threatened by the difference in their respective social classes.",
-            "dalle_3_img": "/data/The_Notebook.png"
+            "dalle_3_img": "/data/Romance_2.png"
         },
         {
             "title": "Pride and Prejudice",
             "plot": "While the arrival of wealthy gentlemen sends her marriage-minded mother into a frenzy, willful and opinionated Elizabeth Bennet matches wits with haughty Mr. Darcy.",
-            "dalle_3_img": "/data/Pride_and_Prejudice.png"
+            "dalle_3_img": "/data/Romance_3.png"
         },
         {
             "title": "La La Land",
             "plot": "When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.",
-            "dalle_3_img": "/data/La_La_Land.png"
+            "dalle_3_img": "/data/Romance_4.png"
         },
         {
             "title": "Eternal Sunshine of the Spotless Mind",
             "plot": "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories forever.",
-            "dalle_3_img": "/data/Eternal_Sunshine_of_the_Spotless_Mind.png"
+            "dalle_3_img": "/data/Romance_5.png"
         }
     ],
     "SciFi": [
         {   "title": "Avatar",
             "plot": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
-            "dalle_3_img": "/data/Avatar.png"
+            "dalle_3_img": "/data/SciFi_1.png"
         },
         {
             "title": "Inception",
             "plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
-            "dalle_3_img": "/data/Inception.png"
+            "dalle_3_img": "/data/SciFi_2.png"
         },
         {
             "title": "2001 A Space Odyssey",
             "plot": "When a mysterious artifact is uncovered on the Moon, a spacecraft manned by two humans and one supercomputer is sent to Jupiter to find its origins.",
-            "dalle_3_img": "/data/2001_A_Space_Odyssey.png"
+            "dalle_3_img": "/data/SciFi_3.png"
         },
         {   
             "title": "The Matrix",
             "plot": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
-            "dalle_3_img": "/data/The_Matrix.png"
+            "dalle_3_img": "/data/SciFi_4.png"
         }
     ],
     "Horror": [
         {
             "title": "It",
             "plot": "In the summer of 1989, a group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town.",
-            "dalle_3_img": "/data/It.png"
+            "dalle_3_img": "/data/Horror_1.png"
         },
         {
             "title": "The Conjuring",
             "plot": "Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.",
-            "dalle_3_img": "/data/The_Conjuring.png"
+            "dalle_3_img": "/data/Horror_2.png"
         },
         {
             "title": "The Shining",
             "plot": "A family heads to an isolated hotel for the winter, where a sinister presence influences the father into violence. At the same time, his psychic son sees horrifying forebodings from both the past and the future.",
-            "dalle_3_img": "/data/The_Shining.png"
+            "dalle_3_img": "/data/Horror_3.png"
         },
         {
             "title": "Scream",
             "plot": "A year after the murder of her mother, a teenage girl is terrorized by a masked killer who targets her and her friends by using scary movies as part of a deadly game.",
-            "dalle_3_img": "/data/Scream.png"
+            "dalle_3_img": "/data/Horror_4.png"
         }
     ]
 }
